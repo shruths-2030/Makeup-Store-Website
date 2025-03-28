@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <title>Makeup Store</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <header>
+        <h1>The Makeup Store💄🪞</h1>
+    </header>
+    <main>
+        <div class="products">
+            <div class="product" data-name="Lipstick" data-price="10">
+                <div class="wishlist-icon" data-name="Lipstick" data-price="10">🤍</div>
+                <h1>Lipstick</h1>
+                <img src="images/lipstick.jpg" alt="Lipstick">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Lipstick', 200)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Lipgloss" data-price="10">
+                <div class="wishlist-icon" data-name="Lipgloss" data-price="10">🤍</div>
+                <h1>Lip gloss</h1>
+                <img src="images/gloss.png" alt="Lipgloss">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Lipgloss', 200)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Skin tint" data-price="15">
+                <div class="wishlist-icon" data-name="Skin tint" data-price="15">🤍</div>
+                <h1>Skin tint</h1>
+                <img src="images/bb_cream.jpg" alt="Skin tint">
+                <p>Price: ₹100</p>
+                <button onclick="addToCart('Skin tint', 100)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Liquid Foundation" data-price="15">
+                <div class="wishlist-icon" data-name="Liquid Foundation" data-price="15">🤍</div>
+                <h1>Liquid Foundation</h1>
+                <img src="images/foundation.avif" alt="Foundation">
+                <p>Price: ₹350</p>
+                <button onclick="addToCart('Liquid Foundation', 350)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Primer" data-price="20">
+                <div class="wishlist-icon" data-name="Primer" data-price="20">🤍</div>
+                <h1>Primer</h1>
+                <img src="images/primer.webp" alt="Primer">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Primer', 200)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Concealer" data-price="20">
+                <div class="wishlist-icon" data-name="Concealer" data-price="20">🤍</div>
+                <h1>Concealer</h1>
+                <img src="images/concealer.avif" alt="Concealer">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Concealer', 200)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Compact" data-price="20">
+                <div class="wishlist-icon" data-name="Compact" data-price="20">🤍</div>
+                <h1>Compact</h1>
+                <img src="images/compact.jpeg" alt="Compact">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Compact', 200)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Highlighter" data-price="20">
+                <div class="wishlist-icon" data-name="Highlighter" data-price="20">🤍</div>
+                <h1>Highlighter</h1>
+                <img src="images/highlighter.webp" alt="Highlighter">
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('Highlighter', 150)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Blush" data-price="20">
+                <div class="wishlist-icon" data-name="Blush" data-price="20">🤍</div>
+                <h1>Blush</h1>
+                <img src="images/blush.webp" alt="Blush">
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('Blush', 150)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Eyeshadow Palette" data-price="20">
+                <div class="wishlist-icon" data-name="Eyeshadow Palette" data-price="20">🤍</div>
+                <h1>Eyeshadow Palette</h1>
+                <img src="images/eyeshadow.webp" alt="Eyeshadow Palette">
+                <p>Price: ₹250</p>
+                <button onclick="addToCart('Eyeshadow Palette', 250)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Eyeliner" data-price="20">
+                <div class="wishlist-icon" data-name="Eyeliner" data-price="20">🤍</div>
+                <h1>Eyeliner</h1>
+                <img src="images/eyeliner.jpg" alt="Eyeliner">
+                <p>Price: ₹170</p>
+                <button onclick="addToCart('Eyeliner', 170)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Mascara" data-price="20">
+                <div class="wishlist-icon" data-name="Mascara" data-price="20">🤍</div>
+                <h1>Mascara</h1>
+                <img src="images/mascara.webp" alt="Mascara">
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Mascara', 200)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="cart-items"></div>
+        <div id="wishlist-items"></div>
+        <button id="checkout" onclick="checkout()">Checkout</button>
+    </footer>
+    <div id="alert-container"></div>
+    <script src="m.js"></script>
+</body>
+</html>
